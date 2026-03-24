@@ -229,7 +229,7 @@ function HomeSection({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
              <div className="w-full h-full relative flex items-end justify-center">
                 <div className="absolute inset-0 bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:20px_20px] opacity-10"></div>
                 <img 
-                  src="src/111.png" 
+                  src="/src/icon.png" 
                   alt="John Carter" 
                   className="w-full h-full object-cover z-10"
                   referrerPolicy="no-referrer"
@@ -291,12 +291,15 @@ function AboutSection({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
               damping: 15 
             }}
           >
-            <img 
-              src="src/111.png" 
-              alt="About John" 
-              className="w-full h-full object-cover z-10"
-              referrerPolicy="no-referrer"
-            />
+            <div className="w-full h-full relative flex items-center justify-center rounded-full overflow-hidden">
+              <div className="absolute inset-0 bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:20px_20px] opacity-10"></div>
+              <img 
+                src="/src/icon.png" 
+                alt="About John" 
+                className="w-full h-full object-cover z-10"
+                referrerPolicy="no-referrer"
+              />
+            </div>
           </motion.div>
           <div className="absolute -bottom-8 -right-8 bg-brand-yellow brutal-border p-4 rounded-2xl brutal-shadow font-black text-xl z-20">
           2年工作经验
@@ -504,10 +507,10 @@ function ProjectDetailSection({ onNavigate }: { onNavigate: (tab: Tab) => void }
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const images = [
-    { src: "src/gmv.png", title: "GMV" },
-    { src: "src/bfl.jpg", title: "账号播放量" },
-    { src: "src/ks.jpg", title: "运营公司的快手账号" },
-    { src: "src/dy.jpg", title: "运营公司的抖音账号" },
+    { src: "/src/gmv.png", title: "GMV" },
+    { src: "/src/bfl.jpg", title: "账号播放量" },
+    { src: "/src/ks.jpg", title: "运营公司的快手账号" },
+    { src: "/src/dy.jpg", title: "运营公司的抖音账号" },
   ];
 
   return (
