@@ -229,7 +229,7 @@ function HomeSection({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
              <div className="w-full h-full relative flex items-end justify-center">
                 <div className="absolute inset-0 bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:20px_20px] opacity-10"></div>
                 <img 
-                  src="/src/icon.png" 
+                  src="/images/icon.png" 
                   alt="John Carter" 
                   className="w-full h-full object-cover z-10"
                   referrerPolicy="no-referrer"
@@ -292,14 +292,14 @@ function AboutSection({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
             }}
           >
             <div className="w-full h-full relative flex items-center justify-center rounded-full overflow-hidden">
-              <div className="absolute inset-0 bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:20px_20px] opacity-10"></div>
-              <img 
-                src="/src/icon.png" 
-                alt="About John" 
-                className="w-full h-full object-cover z-10"
-                referrerPolicy="no-referrer"
-              />
-            </div>
+            <div className="absolute inset-0 bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:20px_20px] opacity-10"></div>
+            <img 
+              src="/images/icon.png" 
+              alt="About John" 
+              className="w-full h-full object-cover z-10"
+              referrerPolicy="no-referrer"
+            />
+          </div>
           </motion.div>
           <div className="absolute -bottom-8 -right-8 bg-brand-yellow brutal-border p-4 rounded-2xl brutal-shadow font-black text-xl z-20">
           2年工作经验
@@ -507,10 +507,10 @@ function ProjectDetailSection({ onNavigate }: { onNavigate: (tab: Tab) => void }
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const images = [
-    { src: "/src/gmv.png", title: "GMV" },
-    { src: "/src/bfl.jpg", title: "账号播放量" },
-    { src: "/src/ks.jpg", title: "运营公司的快手账号" },
-    { src: "/src/dy.jpg", title: "运营公司的抖音账号" },
+    { src: "/images/gmv.png", title: "GMV" },
+    { src: "/images/bfl.jpg", title: "账号播放量" },
+    { src: "/images/ks.jpg", title: "运营公司的快手账号" },
+    { src: "/images/dy.jpg", title: "运营公司的抖音账号" },
   ];
 
   return (
@@ -622,8 +622,8 @@ function ProjectDetailSection({ onNavigate }: { onNavigate: (tab: Tab) => void }
         <h3 className="text-3xl font-black border-b-4 border-brand-black pb-4 inline-block">动态展示</h3>
         <div className="grid md:grid-cols-2 gap-8">
           {[
-            { title: "核心交互演示", color: "bg-brand-yellow", videoSrc: "src/video1.mp4", poster: "" },
-            { title: "动效细节展示", color: "bg-brand-pink", videoSrc: "src/video2.mp4", poster: "" },
+            { title: "核心交互演示", color: "bg-brand-yellow", videoSrc: "/images/video1.mp4", poster: "https://picsum.photos/seed/video0/800/600" },
+            { title: "动效细节展示", color: "bg-brand-pink", videoSrc: "/images/video2.MP4", poster: "https://picsum.photos/seed/video1/800/600" },
             { title: "用户流程演示", color: "bg-brand-blue", videoSrc: "https://www.w3schools.com/html/mov_bbb.mp4", poster: "https://picsum.photos/seed/video2/800/600" },
             { title: "数据可视化动效", color: "bg-brand-yellow", videoSrc: "https://www.w3schools.com/html/mov_bbb.mp4", poster: "https://picsum.photos/seed/video3/800/600" }
           ].map((video, idx) => {
