@@ -171,11 +171,6 @@ export default function App() {
             LU WAN ZE
           </div>
       
-          <div className="flex gap-6">
-            <a href="#" className="brutal-btn-secondary p-3"><Twitter /></a>
-            <a href="#" className="brutal-btn-secondary p-3"><Github /></a>
-            <a href="#" className="brutal-btn-secondary p-3"><Linkedin /></a>
-          </div>
           <p className="font-bold">© 2026 Ken. 保留所有权利。</p>
         </div>
       </footer>
@@ -229,7 +224,7 @@ function HomeSection({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
              <div className="w-full h-full relative flex items-end justify-center">
                 <div className="absolute inset-0 bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:20px_20px] opacity-10"></div>
                 <img 
-                  src="/images/icon.png" 
+                  src="/images/111.png" 
                   alt="John Carter" 
                   className="w-full h-full object-cover z-10"
                   referrerPolicy="no-referrer"
@@ -242,27 +237,27 @@ function HomeSection({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
       {/* Services/Features */}
       <div className="text-center space-y-12">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-black">
-          我提供的 <span className="bg-brand-pink text-white px-4 inline-block mt-2 sm:mt-0">多元化服务</span>
+          希望 <span className="bg-brand-pink text-white px-4 inline-block mt-2 sm:mt-0"> 能加入你们</span>
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto">
-          凭借多年的行业经验，我能够为客户提供从概念设计到最终落地的全方位支持。
+          用全力以赴的状态去面对任何挑战。
         </p>
         
         <div className="grid md:grid-cols-3 gap-8">
           <ServiceCard 
             icon={<Layout className="text-brand-blue" size={40} />} 
-            title="网页设计" 
-            desc="打造响应式、高性能且视觉出众的网页，提升品牌在线形象。"
+            title="内容打造" 
+            desc=""
           />
           <ServiceCard 
             icon={<Smartphone className="text-brand-pink" size={40} />} 
-            title="UI/UX 设计" 
-            desc="以用户为中心，设计直观且易于使用的交互界面，优化用户体验。"
+            title="策划设计" 
+            desc=""
           />
           <ServiceCard 
             icon={<Watch className="text-brand-yellow" size={40} />} 
-            title="产品设计" 
-            desc="从产品策略到视觉呈现，全方位打磨产品细节，创造商业价值。"
+            title="账号运营" 
+            desc=""
           />
         </div>
       </div>
@@ -294,7 +289,7 @@ function AboutSection({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
             <div className="w-full h-full relative flex items-center justify-center rounded-full overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:20px_20px] opacity-10"></div>
             <img 
-              src="/images/icon.png" 
+              src="/images/111.png" 
               alt="About John" 
               className="w-full h-full object-cover z-10"
               referrerPolicy="no-referrer"
@@ -302,30 +297,30 @@ function AboutSection({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
           </div>
           </motion.div>
           <div className="absolute -bottom-8 -right-8 bg-brand-yellow brutal-border p-4 rounded-2xl brutal-shadow font-black text-xl z-20">
-          2年工作经验
+          NAME: Ken
         </div>
       </div>
       <div className="space-y-8 order-2 md:order-none">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
-          这些杰作的 <span className="bg-brand-blue text-white px-4 inline-block mt-2 sm:mt-0">幕后推手</span>
+         <span className="bg-brand-blue text-white px-4 inline-block mt-2 sm:mt-0">幕后推手</span>
         </h2>
         <p className="text-xl text-gray-600 leading-relaxed">
-          我是一名热衷于探索设计边界的创意人，始终坚持用设计解决问题，为用户创造惊喜。
+          热衷于探索新事物，强大的内驱力，展现不一样的自己。
         </p>
         
         <div className="space-y-6">
           <div className="flex gap-4 items-start">
             <div className="w-6 h-6 rounded bg-brand-blue brutal-border mt-1" />
             <div>
-              <h4 className="font-black text-xl">深耕内容运营</h4>
-              <p className="text-gray-600">深耕设计领域多年，积累了丰富的实战经验和敏锐的审美洞察力。</p>
+              <h4 className="font-black text-xl">院校：南宁学院-工科学士</h4>
+              <p className="text-gray-600"></p>
             </div>
           </div>
           <div className="flex gap-4 items-start">
             <div className="w-6 h-6 rounded bg-brand-pink brutal-border mt-1" />
             <div>
-              <h4 className="font-black text-xl">100+ 个成功项目</h4>
-              <p className="text-gray-600">已成功助力百余家企业实现数字化转型，赢得了客户的广泛信赖。</p>
+              <h4 className="font-black text-xl">岗位意向：海外媒体运营/TIKTOK运营</h4>
+              <p className="text-gray-600"></p>
             </div>
           </div>
         </div>
@@ -343,17 +338,17 @@ function AboutSection({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
 
 function ResumeSection({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
   return (
-    <div className="space-y-12 relative mt-8 sm:mt-0">
+    <div className="space-y-12 relative pt-20 sm:pt-16 mt-8 sm:mt-0">
       <button 
         onClick={() => onNavigate('about')}
-        className="absolute -top-20 sm:-top-16 left-0 brutal-btn-secondary p-3 flex items-center gap-2 group z-10"
+        className="absolute top-0 left-0 brutal-btn-secondary p-3 flex items-center gap-2 group z-10"
       >
         <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" /> 
         <span className="font-bold hidden sm:inline">返回</span>
       </button>
 
       <div className="text-center space-y-4">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black">我的 <span className="bg-brand-pink px-4 text-white inline-block mt-2 sm:mt-0">个人简历</span></h2>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black">（日后完善）我的 <span className="bg-brand-pink px-4 text-white inline-block mt-2 sm:mt-0">个人简历</span></h2>
         <p className="text-gray-600 max-w-xl mx-auto">了解我的教育背景、工作经历以及专业技能。</p>
       </div>
 
@@ -371,21 +366,13 @@ function ResumeSection({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
             <div className="relative pl-8 before:absolute before:left-[11px] before:top-2 before:bottom-0 before:w-1 before:bg-brand-black">
               <div className="absolute left-0 top-2 w-6 h-6 bg-brand-pink brutal-border rounded-full z-10" />
               <div className="space-y-2">
-                <span className="inline-block bg-brand-black text-white px-3 py-1 font-bold text-sm rounded-md">2016 - 2020</span>
-                <h4 className="text-xl font-black">设计学士学位</h4>
-                <p className="font-bold text-gray-800">纽约视觉艺术学院</p>
-                <p className="text-gray-600">主修交互设计与视觉传达，在校期间多次获得设计比赛金奖。</p>
+                <span className="inline-block bg-brand-black text-white px-3 py-1 font-bold text-sm rounded-md">2022 - 2024</span>
+                <h4 className="text-xl font-black">南宁学院-----本科</h4>
+                <p className="font-bold text-gray-800">计算机科学与技术专业</p>
+                <p className="text-gray-600"></p>
               </div>
             </div>
-            <div className="relative pl-8 before:absolute before:left-[11px] before:top-2 before:bottom-0 before:w-1 before:bg-brand-black">
-              <div className="absolute left-0 top-2 w-6 h-6 bg-brand-blue brutal-border rounded-full z-10" />
-              <div className="space-y-2">
-                <span className="inline-block bg-brand-black text-white px-3 py-1 font-bold text-sm rounded-md">2020 - 2022</span>
-                <h4 className="text-xl font-black">人机交互硕士学位</h4>
-                <p className="font-bold text-gray-800">卡内基梅隆大学</p>
-                <p className="text-gray-600">专注于用户体验研究与前沿交互技术探索。</p>
-              </div>
-            </div>
+
           </div>
         </div>
 
@@ -395,26 +382,26 @@ function ResumeSection({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
             <div className="w-12 h-12 bg-brand-blue brutal-border rounded-xl flex items-center justify-center">
               <Code size={24} />
             </div>
-            <h3 className="text-3xl font-black">工作经历</h3>
+            <h3 className="text-3xl font-black">个人经历</h3>
           </div>
           
           <div className="space-y-6">
             <div className="relative pl-8 before:absolute before:left-[11px] before:top-2 before:bottom-0 before:w-1 before:bg-brand-black">
               <div className="absolute left-0 top-2 w-6 h-6 bg-brand-yellow brutal-border rounded-full z-10" />
               <div className="space-y-2">
-                <span className="inline-block bg-brand-black text-white px-3 py-1 font-bold text-sm rounded-md">2022 - 至今</span>
-                <h4 className="text-xl font-black">高级 UI/UX 设计师</h4>
-                <p className="font-bold text-gray-800">TechCorp 科技</p>
-                <p className="text-gray-600">主导公司核心产品的设计系统重构，提升了 40% 的用户留存率。</p>
+                <span className="inline-block bg-brand-black text-white px-3 py-1 font-bold text-sm rounded-md">2024 - 至今</span>
+                <h4 className="text-xl font-black">广西</h4>
+                <p className="font-bold text-gray-800"></p>
+                <p className="text-gray-600"></p>
               </div>
             </div>
             <div className="relative pl-8 before:absolute before:left-[11px] before:top-2 before:bottom-0 before:w-1 before:bg-brand-black">
               <div className="absolute left-0 top-2 w-6 h-6 bg-brand-pink brutal-border rounded-full z-10" />
               <div className="space-y-2">
-                <span className="inline-block bg-brand-black text-white px-3 py-1 font-bold text-sm rounded-md">2020 - 2022</span>
-                <h4 className="text-xl font-black">产品设计师</h4>
-                <p className="font-bold text-gray-800">CreativeStudio 创新工坊</p>
-                <p className="text-gray-600">参与多个 0-1 创新项目的设计与落地，负责跨端体验一致性。</p>
+                <span className="inline-block bg-brand-black text-white px-3 py-1 font-bold text-sm rounded-md">2021 - 2022</span>
+                <h4 className="text-xl font-black"></h4>
+                <p className="font-bold text-gray-800"></p>
+                <p className="text-gray-600"></p>
               </div>
             </div>
           </div>
@@ -425,7 +412,7 @@ function ResumeSection({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
       <div className="brutal-card space-y-8">
         <h3 className="text-3xl font-black text-center border-b-4 border-brand-black pb-4">专业技能</h3>
         <div className="flex flex-wrap gap-4 justify-center">
-          {['Figma', 'Sketch', 'Adobe Creative Suite', 'HTML/CSS', 'React', 'Prototyping', 'User Research', 'Design Systems', 'Webflow', 'Framer'].map((skill, index) => (
+          {['摄影', '剪辑', '运营', '内容创作'].map((skill, index) => (
             <span key={index} className={`brutal-border px-6 py-3 rounded-full font-bold text-lg brutal-shadow-hover cursor-default ${['bg-brand-yellow', 'bg-brand-pink', 'bg-brand-blue', 'bg-white'][index % 4]}`}>
               {skill}
             </span>
@@ -438,10 +425,10 @@ function ResumeSection({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
 
 function WorksSection({ onNavigate }: { onNavigate: (tab: Tab) => void }) {
   const projects = [
-    { title: "电商作品集", category: "网页设计", color: "bg-brand-blue", image: "https://picsum.photos/seed/web1/800/600" },
-    { title: "下次再来就会更新了噢", category: "欢迎", color: "bg-brand-pink", image: "https://picsum.photos/seed/app1/800/600" },
-    { title: "下次再来就会更新了噢", category: "欢迎", color: "bg-brand-yellow", image: "https://picsum.photos/seed/brand1/800/600" },
-    { title: "下次再来就会更新了噢", category: "欢迎", color: "bg-brand-blue", image: "https://picsum.photos/seed/dash1/800/600" },
+    { title: "电商作品集", category: "点进来", color: "bg-brand-blue", image: "/images/sy4.png" },
+    { title: "下次再来就会更新了噢", category: "欢迎", color: "bg-brand-pink", image: "/images/sy3.png" },
+    { title: "下次再来就会更新了噢", category: "欢迎", color: "bg-brand-yellow", image: "/images/sy2.png" },
+    { title: "下次再来就会更新了噢", category: "欢迎", color: "bg-brand-blue", image: "/images/sy1.png" },
   ];
 
   return (
@@ -508,16 +495,17 @@ function ProjectDetailSection({ onNavigate }: { onNavigate: (tab: Tab) => void }
 
   const images = [
     { src: "/images/gmv.png", title: "GMV" },
-    { src: "/images/bfl.jpg", title: "账号播放量" },
+    { src: "/images/bfl.jpg", title: "个人账号" },
     { src: "/images/ks.jpg", title: "运营公司的快手账号" },
     { src: "/images/dy.jpg", title: "运营公司的抖音账号" },
+    { src: "/images/xhs.png", title: "小红书数据" },
   ];
 
   return (
-    <div className="space-y-12 relative mt-8 sm:mt-0">
+    <div className="space-y-12 relative pt-20 sm:pt-16 mt-8 sm:mt-0">
       <button 
         onClick={() => onNavigate('works')}
-        className="absolute -top-20 sm:-top-16 left-0 brutal-btn-secondary p-3 flex items-center gap-2 group z-10"
+        className="absolute top-0 left-0 brutal-btn-secondary p-3 flex items-center gap-2 group z-10"
       >
         <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" /> 
         <span className="font-bold hidden sm:inline">返回作品集</span>
@@ -526,22 +514,22 @@ function ProjectDetailSection({ onNavigate }: { onNavigate: (tab: Tab) => void }
       {/* Project Header */}
       <div className="space-y-6">
         <h2 className="text-4xl md:text-6xl font-black leading-tight">
-          各个平台的<span className="bg-brand-yellow px-4 inline-block mt-2 sm:mt-0">作品集</span>
+          各个项目的<span className="bg-brand-yellow px-4 inline-block mt-2 sm:mt-0">作品集</span>
         </h2>
         <p className="text-xl text-gray-600 max-w-3xl leading-relaxed">
-          目前正在努力完善中~~
+          
         </p>
       </div>
 
       {/* Image Gallery */}
       <div className="space-y-8">
         <h3 className="text-3xl font-black text-left border-b-4 border-brand-black pb-4 inline-block">核心数据表现</h3>
-        {/* 使用 columns 实现瀑布流布局（Masonry Layout），增加列数，缩小图片 */}
-        <div className="columns-2 sm:columns-3 lg:columns-4 gap-6 space-y-6">
+        {/* 使用 columns 实现瀑布流布局，但移除 space-y 避免卡片之间间距过大，改用更紧凑的间距 */}
+        <div className="columns-2 sm:columns-3 lg:columns-4 gap-6">
           {images.map((img, idx) => (
-            <div key={idx} className="break-inside-avoid space-y-3 mb-6">
+            <div key={idx} className="break-inside-avoid mb-8 flex flex-col items-center">
               <div 
-                className={`brutal-card p-0 overflow-hidden relative flex items-center justify-center cursor-pointer hover:-translate-y-2 transition-transform brutal-shadow-hover group ${['bg-[#f0f0f0]', 'bg-[#e5e5e5]', 'bg-[#d4d4d4]', 'bg-[#f5f5f5]'][idx % 4]}`}
+                className={`brutal-card p-0 overflow-hidden relative w-full flex items-center justify-center cursor-pointer hover:-translate-y-2 transition-transform brutal-shadow-hover group ${['bg-[#f0f0f0]', 'bg-[#e5e5e5]', 'bg-[#d4d4d4]', 'bg-[#f5f5f5]'][idx % 4]}`}
                 onClick={() => setSelectedImage(img.src)}
               >
                 <div className="absolute inset-0 bg-[radial-gradient(#00000011_1px,transparent_1px)] [background-size:10px_10px]"></div>
@@ -553,7 +541,7 @@ function ProjectDetailSection({ onNavigate }: { onNavigate: (tab: Tab) => void }
                   referrerPolicy="no-referrer"
                 />
               </div>
-              <div className="flex items-center justify-center gap-2 px-2">
+              <div className="flex items-center justify-center gap-2 px-2 mt-4 w-full">
                 <div className={`w-2.5 h-2.5 rounded-full brutal-border flex-shrink-0 ${['bg-brand-yellow', 'bg-brand-pink', 'bg-brand-blue', 'bg-brand-yellow'][idx % 4]}`} />
                 <h4 className="text-base sm:text-lg font-black truncate">{img.title}</h4>
               </div>
@@ -598,62 +586,60 @@ function ProjectDetailSection({ onNavigate }: { onNavigate: (tab: Tab) => void }
         <div className="md:col-span-2 space-y-6">
           <h3 className="text-3xl font-black border-b-4 border-brand-black pb-4 inline-block">项目挑战</h3>
           <p className="text-gray-600 text-lg leading-relaxed">
-            现有的健身应用往往界面繁杂，数据展示枯燥。我们的挑战在于如何在保持专业数据准确性的同时，注入年轻化的视觉元素，降低用户的认知负担，并通过游戏化的交互设计提升用户粘性。
+            不断探索以及直面挑战，保持一颗永远都在学习的心！
           </p>
         </div>
         <div className="brutal-card bg-brand-blue text-white space-y-4">
           <div>
             <h4 className="font-black text-xl mb-1">角色</h4>
-            <p className="font-bold opacity-90">主视觉设计师</p>
+            <p className="font-bold opacity-90">全栈运营</p>
           </div>
           <div>
-            <h4 className="font-black text-xl mb-1">周期</h4>
-            <p className="font-bold opacity-90">3 个月</p>
+            <h4 className="font-black text-xl mb-1">0-1搭建</h4>
+            <p className="font-bold opacity-90"></p>
           </div>
           <div>
-            <h4 className="font-black text-xl mb-1">工具</h4>
-            <p className="font-bold opacity-90">Figma, Protopie</p>
+            <h4 className="font-black text-xl mb-1"></h4>
+            <p className="font-bold opacity-90"></p>
           </div>
         </div>
       </div>
 
       {/* Video Presentation Gallery */}
       <div className="space-y-8">
-        <h3 className="text-3xl font-black border-b-4 border-brand-black pb-4 inline-block">动态展示</h3>
+        <h3 className="text-3xl font-black border-b-4 border-brand-black pb-4 inline-block">视频展示</h3>
         <div className="grid md:grid-cols-2 gap-8">
           {[
-            { title: "核心交互演示", color: "bg-brand-yellow", videoSrc: "/images/video1.mp4", poster: "https://picsum.photos/seed/video0/800/600" },
-            { title: "动效细节展示", color: "bg-brand-pink", videoSrc: "/images/video2.MP4", poster: "https://picsum.photos/seed/video1/800/600" },
-            { title: "用户流程演示", color: "bg-brand-blue", videoSrc: "https://www.w3schools.com/html/mov_bbb.mp4", poster: "https://picsum.photos/seed/video2/800/600" },
-            { title: "数据可视化动效", color: "bg-brand-yellow", videoSrc: "https://www.w3schools.com/html/mov_bbb.mp4", poster: "https://picsum.photos/seed/video3/800/600" }
+            { title: "作品1", color: "bg-brand-blue", videoSrc: "/images/video5.mp4", poster: "" },
+            { title: "作品2", color: "bg-brand-yellow", videoSrc: "/images/video4.mp4", poster: "" },
+            { title: "作品3", color: "bg-brand-pink", videoSrc: "/images/video2.MP4", poster: "" },
+            { title: "作品4", color: "bg-brand-yellow", videoSrc: "/images/video1.mp4", poster: "" },
+            { title: "作品5", color: "bg-brand-yellow", videoSrc: "/images/video3.mp4", poster: "" },
+            { title: "更多作品待上传", color: "bg-brand-yellow"}
           ].map((video, idx) => {
             const [isPlaying, setIsPlaying] = useState(false);
             
             return (
               <div key={idx} className="space-y-4">
                 <div 
-                  className={`brutal-card p-0 overflow-hidden ${video.color} relative aspect-video flex items-center justify-center group cursor-pointer brutal-shadow-hover`}
-                  onClick={(e) => {
-                    const videoEl = e.currentTarget.querySelector('video');
-                    if (videoEl) {
-                      if (videoEl.paused) {
-                        videoEl.play();
-                        setIsPlaying(true);
-                      } else {
-                        videoEl.pause();
-                        setIsPlaying(false);
-                      }
-                    }
-                  }}
-                >
+                className={`brutal-card p-0 overflow-hidden ${video.color} relative aspect-video flex items-center justify-center group cursor-pointer brutal-shadow-hover`}
+                onClick={(e) => {
+                  const videoEl = e.currentTarget.querySelector('video');
+                  if (videoEl && !isPlaying) {
+                    videoEl.play();
+                    setIsPlaying(true);
+                  }
+                }}
+              >
                   <div className={`absolute inset-0 bg-[radial-gradient(#00000033_1px,transparent_1px)] [background-size:20px_20px] opacity-20 ${isPlaying ? 'hidden' : 'block'}`}></div>
                   
                   <video 
-                    className="w-full h-full object-cover relative z-0"
+                    className="w-full h-full object-contain relative z-0 bg-brand-black"
                     poster={video.poster}
                     src={video.videoSrc}
                     loop
                     playsInline
+                    controls={isPlaying}
                     onEnded={() => setIsPlaying(false)}
                     onPause={() => setIsPlaying(false)}
                     onPlay={() => setIsPlaying(true)}
